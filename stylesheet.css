@@ -1,17 +1,21 @@
-
 body {
     background: #D1D1D1; 
+    font-family: Garamond, serif;
 }
 
 div {
 	border-radius: 5px;
 }
 
+#container {
+    /*position: relative;*/
+    width:1200px;
+}
+
 #header {
 	position: relative;
 	height: 180px;
 	background: #D1D1D1;
-	font-family: Garamond, serif;
 	font-weight: bold;
 	color: #525252;
 }
@@ -75,8 +79,22 @@ img {
 	margin-top: 20px;
 	width: 48%;
 	height: 400px;
-	background-color: #F4EBC3;
 	margin-bottom: 10px;
+	color: #525252;
+}
+
+.right h1 {
+    font-size: 70;
+}
+
+.right h2 {
+    font-size: 50;
+    margin-top: -50px;
+}
+
+.right p {
+    font-size: 20;
+    margin-top: -20;
 }
 
 #footer {
