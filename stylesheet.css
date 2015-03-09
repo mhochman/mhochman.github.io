@@ -83,18 +83,18 @@ img {
 }
 
 #hello {
-    font-size: 80;
-    margin-bottom: 0;
+    font-size: 80px;
+    margin-bottom: 0px;
 }
 
 #bit {
-    font-size: 50;
+    font-size: 50px;
     margin-top: 0px;
 }
 
 #about_me {
-    font-size: 20;
-    margin-top: -20;
+    font-size: 20px;
+    margin-top: -20px;
 }
 
 #footer {
