@@ -83,17 +83,17 @@ img {
 	color: #525252;
 }
 
-.right h1 {
+#hello {
     font-size: 80;
     margin-bottom: 0;
 }
 
-.right h2 {
+#bit {
     font-size: 50;
     margin-top: 0px;
 }
 
-.right p {
+#about_me {
     font-size: 20;
     margin-top: -20;
 }
