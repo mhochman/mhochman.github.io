@@ -103,6 +103,71 @@ img {
     margin-top: -20px;
 }
 
+#resume {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+#resume_header {
+    font-size: 80px;
+    color: white;
+    font-weight: normal;
+    border-bottom: 2px solid;
+    border-color: #525252;
+}
+
+.resume_div {
+    color: #525252;
+    border-bottom: 2px solid;
+    border-color: #525252;
+}
+
+.resume_title {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.resume_paragraph {
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.resume_job {
+    margin-bottom: 40px;
+}
+
+.resume_position {
+    font-size: 22px;   
+}
+
+.resume_company {
+    font-size: 20px;
+}
+
+.resume_date {
+    font-size: 18px;
+}
+
+.resume_award {
+    margin-bottom: 10px;
+}
+
+.resume_award_title {
+    font-size: 18px;
+}
+
+.resume_award_date {
+    font-size: 15px;
+}
+
+.resume_bullet {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
 #footer {
 	position: relative;
 	height: 50px;
