@@ -84,12 +84,13 @@ img {
 }
 
 .right h1 {
-    font-size: 70;
+    font-size: 80;
+    margin-bottom: 0;
 }
 
 .right h2 {
     font-size: 50;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 .right p {
