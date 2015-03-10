@@ -70,7 +70,7 @@ a:hover {
     margin-left: 180px;
 }
 
-img {
+#pic img {
     -webkit-border-radius: 300px;
     -moz-border-radius: 300px;
     border-radius: 300px;
@@ -195,6 +195,30 @@ ul {
 
 .contact_info {
     font-size: 20px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1690C4;
+    float: left;
+    margin-right: 20px;
+}
+
+#circle_call img {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+#circle_email img {
+    margin-top: 26px;
+    margin-left: 19px;
+}
+
+#circle_social img {
+    margin-top: 25px;
+    margin-left: 26px;
 }
 
 #footer {
