@@ -115,6 +115,7 @@ a:hover {
     font-weight: normal;
     border-bottom: 2px solid;
     border-color: #525252;
+    text-shadow: 0px 2px 3px #555;
 }
 
 .resume_div {
@@ -174,6 +175,7 @@ ul {
     color: white;
     font-weight: normal;
     margin-top: 35px;
+    text-shadow: 0px 2px 3px #555;
 }
 
 #contact {
