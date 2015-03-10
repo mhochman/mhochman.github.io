@@ -53,6 +53,7 @@ a {
 
 a:hover {
 	font-weight: normal;
+	color: #1690C4;
 }
 
 .left {
@@ -166,6 +167,33 @@ ul {
 .resume_bullet {
     list-style-type: square;
     list-style-position: inside;
+}
+
+#contact_header {
+    font-size: 80px;
+    color: white;
+    font-weight: normal;
+}
+
+#contact {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+.contact_action_sp {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+.contact_action_sp_a {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact_info {
+    font-size: 20px;
 }
 
 #footer {
