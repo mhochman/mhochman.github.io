@@ -1,5 +1,5 @@
 body {
-    background: #D1D1D1; 
+    background: #E0E0E0; 
     font-family: Garamond, serif;
 }
 
@@ -17,7 +17,7 @@ div {
 #header {
 	position: relative;
 	height: 180px;
-	background: #D1D1D1;
+	background: #E0E0E0;
 	font-weight: bold;
 	color: #525252;
 }
