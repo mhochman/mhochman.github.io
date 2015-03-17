@@ -119,21 +119,44 @@ a:hover {
     border-bottom: 2px solid;
     border-color: #525252;
     text-shadow: 0px 2px 3px #555;
+    margin-bottom: 60px;
 }
 
 .resume_div {
     color: #525252;
     border-bottom: 2px solid;
     border-color: #525252;
+    margin-bottom: 60px;
+    min-height: 140px;
+    border-radius: 0px;
+}
+
+.resume_circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #1690C4;
+    float: left;
+    text-align: center;
+    display: table;
+    margin-top: -20px;
 }
 
 .resume_title {
-    font-size: 30px;
-    margin-bottom: 0px;
+    /*font-size: 30px;
+    margin-bottom: 0px;*/
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: normal;
+    word-wrap: break-word;
+    vertical-align: middle;
+    line-height: normal; 
+    display: table-cell;
 }
 
 .resume_paragraph {
-    font-size: 15px;
+    font-size: 20px;
+    margin-left: 150px;
 }
 
 ul {
@@ -161,11 +184,11 @@ ul {
 }
 
 .resume_award_title {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .resume_award_date {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .resume_bullet {
