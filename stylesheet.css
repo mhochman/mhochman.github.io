@@ -243,6 +243,55 @@ ul {
     margin-left: 26px;
 }
 
+.contact_form {
+    float: left;
+    margin-top: -50px;
+    width: 95%;
+}
+
+.text {
+    margin-top: 5px;
+    background: #D04040;
+    font-size: 15px;
+    color: #E0E0E0;
+    width: 100%;
+    min-height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #E0E0E0;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #E0E0E0;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #E0E0E0;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #E0E0E0;
+}
+
+#message {
+    min-height: 100px;
+}
+
+#send_button {
+    float: right;
+    background: #6EB46E;
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+}
+
 #footer {
 	position: relative;
 	height: 50px;
