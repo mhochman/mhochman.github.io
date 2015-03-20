@@ -249,6 +249,11 @@ ul {
     margin-left: 26px;
 }
 
+#contact a:hover {
+	font-weight: normal;
+	color: #1690C4;
+}
+
 .contact_form {
     float: left;
     margin-top: -50px;
