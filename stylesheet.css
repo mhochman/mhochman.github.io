@@ -151,7 +151,7 @@ a:hover {
 .resume_title {
     /*font-size: 30px;
     margin-bottom: 0px;*/
-    font-size: 22px;
+    font-size: 18px;
     color: #ffffff;
     font-weight: normal;
     word-wrap: break-word;
@@ -161,7 +161,7 @@ a:hover {
 }
 
 .resume_paragraph {
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 150px;
 }
 
@@ -170,19 +170,19 @@ ul {
 }
 
 .resume_job {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .resume_position {
-    font-size: 22px;   
+    font-size: 16px;   
 }
 
 .resume_company {
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .resume_date {
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .resume_award {
@@ -190,11 +190,11 @@ ul {
 }
 
 .resume_award_title {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .resume_award_date {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .resume_bullet {
