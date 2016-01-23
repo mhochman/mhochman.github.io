@@ -200,6 +200,7 @@ ul {
 .resume_bullet {
     list-style-type: square;
     list-style-position: inside;
+    font-size: 14px;
 }
 
 #contact_header {
