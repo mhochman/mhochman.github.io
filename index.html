@@ -5,35 +5,380 @@
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<title>Michelle Hochman</title>
 		<link rel="shortcut icon" href="https://cloud.githubusercontent.com/assets/10763244/6582137/9f74bc28-c731-11e4-829d-13e69fed7484.png" >
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="font-awesome-animation.min.css">
+
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- Should be able to remove this once checking in -->
+		<script src="js/classie.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/skillbar.js"></script>
+		<script src="js/highlightheader.js"></script>
+		<script src="js/dropdown.js"></script>
+		<script>
+			function init() {
+				window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+						shrinkOn = 10,
+						header = document.querySelector("header");
+					if (distanceY > shrinkOn) {
+						classie.add(header,"smaller");
+					} else {
+						if (classie.has(header,"smaller")) {
+							classie.remove(header,"smaller");
+						}
+					}
+				});
+			}
+			window.onload = init();
+		</script>
+		</head>
 	</head>
+
 	<body>
-	    <div id="container">
-		<div id="header">
-		    <div id="left_header">
-    			<h1 id="name">Michelle Hochman</h1>
-    			<h6 id="under_name">Computer Science BS, Mathematics BA</h6>
-    		</div>
-    		<div id="right_header">
-    		    <a href="/">HOME</a>
-                <a href="/resume.html">RESUME</a>
-                <a href="/contact.html">CONTACT</a>
-    		</div>
-		</div>
-		<div class="left">
-		    <div id="pic">
-    		    <!--<img src="http://drive.google.com/uc?export=view&id=0Bye6hp7fYUj_cFM2VTJtSGs5bzg" >-->
-    		    <img src="https://cloud.githubusercontent.com/assets/10763244/12538908/c2276c1a-c29a-11e5-9ede-2735012d3f7b.jpg" >
-    		    <!--<img src="https://doc-0k-88-docs.googleusercontent.com/docs/securesc/7gnbn29kdlb9socfgd78uni80hq2cmol/313j8nt52tb61c1csgcpbebhahgsrvbv/1425844800000/09767529659769911878/09767529659769911878/0Bye6hp7fYUj_cFM2VTJtSGs5bzg?h=17233272131486288737&e=view" > -->
-    		</div>
-		</div>
-		<div class="right">
-			<h1 id="hello">Hello,</h1>
-			<h5 id="bit">a bit about me:</h5>
-			<p id="about_me">I graduated Summa Cum Laude from Binghamton University in May of 2015 with majors in Computer Science and Mathematics. I am currently a Software Engineer on the Outlook team at Microsoft in Seattle, WA, where I am pursuing my passion of developing software that over a billion people use every day.</p>
-		</div>
-		<div id="footer">
-			<p>&#169;2015 by Michelle Hochman</p>
-		</div>
-		</div>
+		<!-- Header -->
+		<section>
+			<header>
+				<a href="#home" class="smoothScroll" id="left_header">
+					<h1 id="name">Michelle Hochman</h1>
+					<h6 id="under_name">Computer Science BS, Mathematics BA</h6>
+				</a>
+				<div id="head-mobile"></div>
+				<div id="right_header">
+					<div class="button"></div>
+					<ul>
+					<li><a href="#about" class="smoothScroll">ABOUT</a></li>
+					<li><a href="#education" class="smoothScroll">EDUCATION</a></li>
+					<li><a href="#skills" class="smoothScroll">SKILLS</a></li>
+					<li><a href="#experience" class="smoothScroll">EXPERIENCE</a></li>
+					<li><a href="#projects" class="smoothScroll">PROJECTS</a></li>
+					<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+					</ul>
+				</div>
+			</header>
+		</section>
+
+		<!-- Image -->
+		<section class="bg-img" id="head">
+			<a id="home"></a>
+			<div class="header_container">
+				<div class="row">
+					<div class="hero">
+						<p>Interactive Resume</p>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-down">
+				<a href="#about" class="smoothScroll">
+					<i class="fa fa-chevron-circle-down faa-bounce animated" style="font-size:48px"></i>
+				</a>
+			</div>
+		</section>
+
+		<!-- Intro -->
+		<section class="light">
+			<div id="about" class="container">
+				<a id="about"></a>
+				<h1 class="section_title">ABOUT</h1>
+				<hr>
+				<div class="left">
+					<div id="pic">
+						<img src="https://cloud.githubusercontent.com/assets/10763244/12538908/c2276c1a-c29a-11e5-9ede-2735012d3f7b.jpg" >
+					</div>
+				</div>
+				<div class="right">
+					<div id="about_me">
+						<p>Hello! Welcome to my website, designed and implemented personally by me. I am an all around software developer. I graduated Summa Cum Laude from Binghamton University in May of 2015 with majors in Computer Science and Mathematics. I am currently a Software Engineer on the Outlook team at Microsoft in Seattle, Washington, where I am pursuing my passion of developing software in which millions of people use every day.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education -->
+		<section class="dark">
+			<div id="education" class="container">
+				<a id="education"></a>
+				<h1 class="section_title">EDUCATION</h1>
+				<hr>
+				<div class="left">
+					<div id="edu_left">
+						<h2>Binghamton Univeristy,<br>State University of New York</h2>
+						<h5>August 2011 - May 2015</h5>
+					</div>
+				</div>
+				<div class="right">
+					<div id="edu_right">
+						<h3>Bachelor of Science, Computer Science</h3>
+						<h3>Bachelor of Arts, Mathematics</h3>
+						<h5>Summa Cum Laude</h5>
+						<h4><b>Jack Knoll Scholarship,</b> Women in Computer Science Award</h4>
+						<h4><b>Upsilon Pi Epsilon,</b> Computer Science Honor Society</h4>
+						<h4><b>Pi Mu Epsilon,</b> Mathematics Honor Society</h4>
+						<h4><b>Alpha Omega Epsilon,</b> Professional Engineering Sorority</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="light">
+			<div id="skills" class="container">
+				<a id="skills"></a>
+				<h1 class="section_title">SKILLS</h1>
+				<hr>
+				<div class="left">
+					<div id="skills_left">
+						<h3>Languages</h3>
+						<div id="skills_right">
+							<div class="skillbar clearfix " data-percent="90%">
+								<div class="skillbar-title"><span>C++</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">90%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="80%">
+								<div class="skillbar-title"><span>C</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">80%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="75%">
+								<div class="skillbar-title"><span>Java</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">75%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="80%">
+								<div class="skillbar-title"><span>Python</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">80%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="90%">
+								<div class="skillbar-title"><span>XML</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">90%</div>
+							</div> <!-- End Skill Bar -->
+								<div class="skillbar clearfix " data-percent="85%">
+								<div class="skillbar-title"><span>HTML</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">85%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="80%">
+								<div class="skillbar-title"><span>CSS</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">80%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="50%">
+								<div class="skillbar-title"><span>JavaScript</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">50%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="40%">
+								<div class="skillbar-title"><span>SQL</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">40%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="30%">
+								<div class="skillbar-title"><span>R</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">30%</div>
+							</div> <!-- End Skill Bar -->
+							<div class="skillbar clearfix " data-percent="25%">
+								<div class="skillbar-title"><span>MATLAB</span></div>
+								<div class="skillbar-bar"></div>
+								<div class="skill-bar-percent">25%</div>
+							</div> <!-- End Skill Bar -->
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div id="skills_right">
+						<h3>Tools</h3>
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title"><span>Windows OS</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">80%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="85%">
+							<div class="skillbar-title"><span>Linux OS</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">85%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="85%">
+							<div class="skillbar-title"><span>Mac OS</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">85%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="40%">
+							<div class="skillbar-title"><span>Android OS</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">40%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title"><span>Visual Studio</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">80%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="75%">
+							<div class="skillbar-title"><span>Xcode</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">75%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="40%">
+							<div class="skillbar-title"><span>Android Studio</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">40%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="50%">
+							<div class="skillbar-title"><span>RStudio</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">50%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="60%">
+							<div class="skillbar-title"><span>Git</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">60%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="75%">
+							<div class="skillbar-title"><span>Source Depot</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">75%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="90%">
+							<div class="skillbar-title"><span>MS Office</span></div>
+							<div class="skillbar-bar"></div>
+							<div class="skill-bar-percent">90%</div>
+						</div> <!-- End Skill Bar -->
+					</div>
+				</div>
+			</div>
+		</section>		
+
+		<!-- Experience -->
+		<section class="dark">
+			<div id="experience" class="container">
+				<a id="experience"></a>
+				<h1 class="section_title">EXPERIENCE</h1>
+				<hr>
+				<div class="clearfix" id="exp">
+					<div class="left">
+						<div id="edu_left">
+							<h2>Microsoft Corporation</h2>
+							<h5>August 2015 - Present</h5>
+						</div>
+					</div>
+					<div class="right">
+						<div id="edu_right">
+							<h3>Software Engineer</h3>
+							<h5>Working on the Outlook Desktop Engineering team. Implementing front-end color and design features related to Office theming for Outlook. Developing accessibility improvements to deliver an enhanced experience for visually impaired Outlook users. Maintaining, monitoring, and acting upon telemetry and user data to improve the reliability of Outlook.</h5>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix" id="exp">
+					<div class="left">
+						<div id="edu_left">
+							<h2>Microsoft Corporation</h2>
+							<h5>May 2014 - August 2014</h5>
+						</div>
+					</div>
+					<div class="right">
+						<div id="edu_right">
+							<h3>Software Development Engineer Intern</h3>
+							<h5>Worked on the Marketing Products and Services IT team. Determined a set of key performance indicators that demonstrate optimal capacity of the CodeSign system. Used machine learning and statistical anomaly detection methods to facilitate data analysis and predict outages.</h5>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix" id="exp">
+					<div class="left">
+						<div id="edu_left">
+							<h2>Ricoh Production Print Solutions</h2>
+							<h5>August 2013 - May 2014</h5>
+						</div>
+					</div>
+					<div class="right">
+						<div id="edu_right">
+							<h3>Software Engineer Co-Op</h3>
+							<h5>Worked on the Control Unit Development team. Developed a C++ program to compensate for non-uniformity in high quality printer output. Worked remotely from Binghamton, NY, reporting directly to manager in Boulder, CO.</h5>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix" id="exp">
+					<div class="left">
+						<div id="edu_left">
+							<h2>Ricoh Production Print Solutions</h2>
+							<h5>June 2013 - August 2013</h5>
+						</div>
+					</div>
+					<div class="right">
+						<div id="edu_right">
+							<h3>Software Engineer Intern</h3>
+							<h5>Worked on the Control Unit Development team. Implemented, in C++, and optimized a high quality image processing halftoning algorithm. Gained valuable real world and specialized skills such as image processing, optimization techniques, code version control, MATLAB, high/low level design documentation, and team communication.</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="light">
+			<div id="projects" class="container">
+				<a id="projects"></a>
+				<h1 class="section_title">PROJECTS</h1>
+				<hr>
+				<div class="left">
+					<h1>COMING SOON</h1>
+				</div>
+				<div class="right">
+					<h4>Check out my github page to see the source code for this website.</h4>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="dark">
+			<div id="contact" class="container">
+				<a id="contact"></a>
+				<h1 class="section_title">CONTACT</h1>
+				<hr>
+				<div id="contact_top">
+					<h4>Let's get in touch!</h4>
+				</div>
+				<div id="contact_form">
+					<form action="/contact.php" method="post">
+						<div class="form-group">
+							<label class="sr-only" for="inputName">Name</label>
+							<input type="text" placeholder="Name" name="yourname" id="inputName" class="form-control">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="inputEmail">Email address</label>
+							<input type="email" placeholder="Email" name="email" id="inputEmail" class="form-control">
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="inputMessage">Message</label>
+							<textarea placeholder="Message" name="message" rows="5" id="inputMessage" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="inputCode">Email address</label>
+							<input type="text" placeholder="Type: 'Not a robot'" name="code" id="inputCode" class="form-control">
+						</div>
+						<div class="submit-button">
+							<p><button id="contact-submit" class="btn-submit" type="submit">Submit</button></p>
+						</div>
+						<div class="clearfix"></div>
+						<div id="contact-form-response"></div>
+					</form> 
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section class="darkdark">
+			<div class="footer_container">
+			<div id="footer">
+				<h1><a href="#home" class="smoothScroll">&#169;2016 by Michelle Hochman</a></h1>
+			</div>
+			</div>
+		</section>
+
 	</body>
 </html>
