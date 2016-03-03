@@ -1,3 +1,4 @@
+$(function() {
 // Cache selectors
 var lastId,
     topMenu = $("#right_header"),
@@ -33,4 +34,6 @@ $(window).scroll(function(){
          .parent().removeClass("active")
          .end().filter("[href=#"+id+"]").parent().addClass("active");
    }                   
+});
+
 });
