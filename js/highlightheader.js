@@ -10,7 +10,7 @@ var lastId,
       var item = $($(this).attr("href"));
       if (item.length) { return item; }
     });
-
+});
 
 
 // Bind to scroll
@@ -34,6 +34,4 @@ $(window).scroll(function(){
          .parent().removeClass("active")
          .end().filter("[href=#"+id+"]").parent().addClass("active");
    }                   
-});
-
 });
