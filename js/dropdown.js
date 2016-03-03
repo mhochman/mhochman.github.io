@@ -42,7 +42,9 @@ $("#right_header").menumaker({
    format: "multitoggle"
 });
 });
+})(jQuery);
 
+(function($){
 $("#right_header a").click(function(){
   var mediasize = 600;
   if ($( window ).width() <= mediasize) {
@@ -50,5 +52,4 @@ $("#right_header a").click(function(){
     $(this).parent().parent().parent().parent().find(".button").toggleClass('menu-opened');
   }
 });
-
 })(jQuery);
