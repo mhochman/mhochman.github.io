@@ -42,4 +42,13 @@ $("#right_header").menumaker({
    format: "multitoggle"
 });
 });
+
+$("#right_header a").click(function(){
+  var mediasize = 600;
+  if ($( window ).width() <= mediasize) {
+    $(this).parent().parent().hide();
+    $(this).parent().parent().parent().parent().find(".button").toggleClass('menu-opened');
+  }
+});
+
 })(jQuery);
