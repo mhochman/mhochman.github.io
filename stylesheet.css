@@ -419,7 +419,7 @@ a:hover {
 #edu_left h5 {
 	font-size: 16px;
 	font-weight: lighter;
-	color: #9e8fa3;
+	color: #afa3c2;
 	margin-top: 4px;
 }
 
@@ -437,14 +437,14 @@ a:hover {
 #edu_right h5 {
 	font-size: 16px;
 	font-weight: lighter;
-	color: #9e8fa3;
+	color: #afa3c2;
 	margin-top: 4px;
 }
 
 #edu_right h4 {
 	font-size: 16px;
 	font-weight: lighter;
-	color: #9e8fa3;
+	color: #afa3c2;
 	margin-top: 0px;
 	margin-bottom: 4px;
 }
@@ -557,7 +557,7 @@ a:hover {
 #contact h4 {
 	font-size: 18px;
 	font-weight: lighter;
-	color: #9e8fa3;
+	color: #afa3c2;
 }
 
 #contact_form {
@@ -1001,6 +1001,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	}
 
 	header {
+		height: 120px;
+	}
+	header #right_header {
 		height: 120px;
 	}
 	header #name {
