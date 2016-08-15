@@ -98,9 +98,6 @@ hr {
 	font-size: 50px;
 	font-weight: bold;
 	color: #27292E;
-	border-style: solid;
-	display: inline-block; 
-	background: rgba(255, 255, 255, 0.25);
 }
 
 .scroll-down {
