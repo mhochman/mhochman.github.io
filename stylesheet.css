@@ -396,6 +396,10 @@ a {
 	transition: all 0.3s;
 }
 
+#about h2 {
+	font-weight: bold;
+}
+
 #education {
 	margin-bottom: 10px;
 }
